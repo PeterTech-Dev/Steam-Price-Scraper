@@ -30,5 +30,5 @@ Each file contains a dictionary of item names and their market prices in USD.
 
 1. Clone the repo  
    ```bash
-   git clone https://github.com/yourusername/steam-price-scraper.git
+   git clone https://github.com/PeterTech-Dev/steam-price-scraper.git
    cd steam-price-scraper
