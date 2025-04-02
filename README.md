@@ -1,24 +1,34 @@
-#Steam-Price-Scraper
-The Steam-Price-Scraper is a simple and effective tool designed to scrape market prices for items in popular Steam games like CS2, TF2, Rust, and Dota 2. It gathers item data from the Steam Community Market and exports it into clean JSON files, making it easy to use in browser extensions, bots, or price-checking tools.
+# 🛒 Steam-Price-Scraper
 
-Whether you're building a Steam inventory calculator, trading bot, or just want historical price data, this tool gives you structured and up-to-date pricing info fast.
+**Steam-Price-Scraper** is a simple and effective tool that collects market prices for items in popular Steam games like **CS2**, **TF2**, **Rust**, and **Dota 2**.  
+It exports the scraped data into clean `.json` files for easy use in web apps, extensions, bots, or personal tools.
 
-🔧 Features:
-✅ Supports multiple games (CS2, TF2, Rust, Dota 2)
+---
 
-✅ Saves scraped prices into .json files
+## ✨ Features
 
-✅ Easy to integrate into any JavaScript or Python-based project
+- 🎯 Supports CS2, TF2, Rust, and Dota 2
+- 💾 Outputs price data into organized JSON files
+- 🔧 No Steam API key required
+- ⚡ Fast, lightweight, and script-friendly
+- 💻 Perfect for developers making inventory checkers or Steam-related tools
 
-✅ Designed for automation, data analysis, and game extensions
+---
 
-✅ 100% offline – no login or Steam API key required
+## 📁 Output Files
 
-📦 Output:
-cs2-prices.json
+- `cs2-prices.json`
+- `tf2-prices.json`
+- `rust-prices.json`
+- `dota-prices.json`
 
-tf2-prices.json
+Each file contains a dictionary of item names and their market prices in USD.
 
-rust-prices.json
+---
 
-dota-prices.json
+## 🚀 How to Use
+
+1. Clone the repo  
+   ```bash
+   git clone https://github.com/yourusername/steam-price-scraper.git
+   cd steam-price-scraper
