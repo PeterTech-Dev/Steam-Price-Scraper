@@ -37,3 +37,9 @@ Each file contains a dictionary of item names and their market prices in USD.
    ```bash
    pip install requests
 
+---
+
+## 👨‍💻 Author
+
+Built with ❤️ by [PeterTech-Dev](https://github.com/PeterTech-Dev)  
+Want to contribute? PRs and stars are always welcome ⭐
