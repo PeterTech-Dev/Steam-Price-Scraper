@@ -32,3 +32,8 @@ Each file contains a dictionary of item names and their market prices in USD.
    ```bash
    git clone https://github.com/PeterTech-Dev/steam-price-scraper.git
    cd steam-price-scraper
+
+2. Make sure you have Python 3.x installed. Then install the required packages:
+   ```bash
+   pip install requests
+
