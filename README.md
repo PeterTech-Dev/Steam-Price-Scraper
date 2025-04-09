@@ -1,143 +1,71 @@
-# 🧠 Rustalytics – Rust+ Real-Time Monitoring Bot
+# 🛒 Steam-Price-Scraper
 
-Rustalytics is a real-time monitoring bot for Rust servers using the official Rust+ companion system.  
-It keeps your team updated automatically with in-game alerts for:
-
-- 🚁 Patrol Helicopters  
-- 🚢 Cargo Ship spawns  
-- 💥 Explosions  (Not Displayable on Rust + | Not Working)
-- 🎯 CH47 drops and Oil Rig detection  
-- 🧍 Online/offline, AFK status, and deaths  
-- ⏰ Server time, sunrise/sunset info  
-- 💬 Team chat commands  
-
-> Built for 24/7 deployment so you never miss a moment.
+**Steam-Price-Scraper** is a simple and effective tool that collects market prices for items in popular Steam games like **CS2**, **TF2**, **Rust**, and **Dota 2**.  
+It exports the scraped data into clean `.json` files for easy use in web apps, extensions, bots, or personal tools.
 
 ---
 
-## 🛠 Features
+## ✨ Features
 
-- Tracks major world events and player activity
-- Posts alerts directly in Rust+ team chat
-- Detects CH47s landing at Oil Rigs
-- Oil Rig 15-minute engagement timer
-- AFK detection and online/offline status
-- Fully automated with no manual intervention
-- Designed for free cloud deployment (Railway/Render)
+- 🎯 Supports CS2, TF2, Rust, and Dota 2
+- 💾 Outputs price data into organized JSON files
+- 🔧 No Steam API key required
+- ⚡ Fast, lightweight, and script-friendly
+- 💻 Perfect for developers making inventory checkers or Steam-related tools
 
 ---
 
-## 🚀 Getting Started
+## 📁 Output Files
 
-### 1. Clone the repo
+- `cs2-prices.json`
+- `tf2-prices.json`
+- `rust-prices.json`
+- `dota-prices.json`
 
-```bash
-git clone https://github.com/PeterTech-Dev/Rustalytics.git
-cd Rustalytics
+Each file contains a dictionary of item names and their market prices in USD.
+
+---
+
+## 🚀 How to Use
+
+1. Clone the repo  
+   ```bash
+   git clone https://github.com/yourusername/steam-price-scraper.git
+   cd steam-price-scraper
+   ```
+
+2. Run the scraper script  
+   (Language-specific: Python/Node/Other depending on your setup)
+
+3. Use the JSON data however you like in your project
+
+---
+
+## 🔐 License
+
+This project is licensed under the **GNU General Public License v3.0 (GPL-3.0)**  
+You are free to use, share, and modify the code – but **any distributed version must remain open-source**.
+
+📄 [Read the full license terms here »](https://www.gnu.org/licenses/gpl-3.0.html)
+
+---
+
+## 📬 Contributing
+
+Pull requests are welcome! If you want to support more games or platforms, feel free to fork and build on it.
+
+---
+
+## 📫 Contact
+
+If you have any questions, suggestions, or ideas, feel free to open an issue or message me on GitHub!
+
+---
+
+**Made with ❤️ for Steam developers and traders**
 ```
 
-### 2. Install the required dependencies
-
-```bash
-pip install -r requirements.txt
-```
-
-### 3. Add `config.json` and `server.json`
-
-These two files are required to link to your Rust+ account and server.
-
-To generate them easily:
-
-👉 **Install the [RustPlus.py Link Companion Chrome Extension](https://chrome.google.com/webstore/detail/rustpluspy-link-companion/gojhnmnggbnflhdcpcemeahejhcimnlf?hl=en)**
-
-Once you open Rust+ and link a server, this extension will automatically generate the files:
-
-- `server.json` – contains your server IP, port, Steam ID, and token.
-- `config.json` – contains your Expo push token, FCM credentials, and Rust+ auth token.
-
-📝 Copy both of these files into the **root** of your Rustalytics folder.
-
-To keep your **sensitive values private** when deploying to platforms like GitHub, Railway, or Render, create a `.env` file like this:
-
-```env
-# From config.json
-EXPO_PUSH_TOKEN=...
-FCM_TOKEN=...
-GCM_ANDROID_ID=...
-GCM_SECURITY_TOKEN=...
-RUSTPLUS_AUTH_TOKEN=...
-
-# From server.json
-SERVER_IP=129.232.149.98
-SERVER_PORT=27141
-PLAYER_ID=76561198884329745
-PLAYER_TOKEN=-528216812
-```
-
-### 4. Add Public API keys to Python
-
-### 🧪 Rust+ API Setup
-
-These values are used to communicate with the **official Rust+ push servers**.  
-They do **not change** and are publicly available:
-
-```env
-API_KEY=AIzaSyB5y2y-Tzqb4-I4Qnlsh_9naYv_TD8pCvY
-PROJECT_ID=rust-companion-app
-GCM_SENDER_ID=976529667804
-GMS_APP_ID=1:976529667804:android:d6f1ddeb4403b338fea619
-ANDROID_PACKAGE_NAME=com.facepunch.rust.companion
-ANDROID_PACKAGE_CERT=E28D05345FB78A7A1A63D70F4A302DBF426CA5AD
-```
-
-If you ever need to reference them again, they’re also shared in the 📣 [Rust+ API Discord](https://discord.gg/uj8nkK4qJr).
-
----
-
-## 💬 Available Commands
-
-Once deployed, use these in Rust+ team chat:
-
-```plaintext
-.help       → Show command list
-.heli       → Time since last Patrol Heli
-.bradley    → Time until Bradley respawn
-.cargo      → Time since last Cargo Ship
-.time       → Current server time & next sunrise/sunset
-.team       → Online and AFK teammates
-.offline    → Offline durations (if tracked)
-.leader     → Promote the message sender to team leader
-```
-
----
-
-## 🙏 Special Thanks
-
-This project wouldn't be possible without:
-
-🧠 [`rustplus`](https://github.com/olijeffers0n/rustplus)  
-By [**olijeffers0n**](https://github.com/olijeffers0n)
-
-👏 Big thanks to the Rust+ community for unlocking this awesome functionality!
-
----
-
-## 📜 License
-
-This project is licensed under the **MIT License**.  
-You're free to use, fork, and build on top of it!
-
----
-
-## 🔗 Links
-
-- GitHub: [github.com/PeterTech-Dev/Rustalytics](https://github.com/PeterTech-Dev/Rustalytics)
-- RustPlus.py Library: [github.com/olijeffers0n/rustplus](https://github.com/olijeffers0n/rustplus)
-- Chrome Extension (RustPlus.py Link):  
-  [Install from Chrome Webstore](https://chrome.google.com/webstore/detail/rustpluspy-link-companion/gojhnmnggbnflhdcpcemeahejhcimnlf?hl=en)
-
----
-
+Let me know if you'd like to embed a usage screenshot or want badges (like GitHub stars, license, or download count) at the top!
 ## 👨‍💻 Author
 
 Built with ❤️ by [PeterTech-Dev](https://github.com/PeterTech-Dev)  
