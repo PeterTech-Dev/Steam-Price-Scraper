@@ -44,15 +44,55 @@ pip install -r requirements.txt
 
 ### 3. Add `config.json` and `server.json`
 
-These files are needed for Rust+ API communication.  
-They contain your device token, server info, and authentication details.
+These two files are required to link to your Rust+ account and server.
 
-#### How to get them:
+To generate them easily:
 
-🧩 Install this Chrome Extension:  
-👉 [RustPlus.py Link Companion (Chrome)](https://chrome.google.com/webstore/detail/rustpluspy-link-companion/gojhnmnggbnflhdcpcemeahejhcimnlf?hl=en)
+👉 **Install the [RustPlus.py Link Companion Chrome Extension](https://chrome.google.com/webstore/detail/rustpluspy-link-companion/gojhnmnggbnflhdcpcemeahejhcimnlf?hl=en)**
 
-It will automatically generate the required `config.json` and `server.json` files after you link with Rust+.
+Once you open Rust+ and link a server, this extension will automatically generate the files:
+
+- `server.json` – contains your server IP, port, Steam ID, and token.
+- `config.json` – contains your Expo push token, FCM credentials, and Rust+ auth token.
+
+📝 Copy both of these files into the **root** of your Rustalytics folder.
+
+To keep your **sensitive values private** when deploying to platforms like GitHub, Railway, or Render, create a `.env` file like this:
+
+```env
+# From config.json
+EXPO_PUSH_TOKEN=...
+FCM_TOKEN=...
+GCM_ANDROID_ID=...
+GCM_SECURITY_TOKEN=...
+RUSTPLUS_AUTH_TOKEN=...
+
+# From server.json
+SERVER_IP=129.232.149.98
+SERVER_PORT=27141
+PLAYER_ID=76561198884329745
+PLAYER_TOKEN=-528216812
+```
+
+---
+
+### 🧪 Rust+ API Setup
+
+These values are used to communicate with the **official Rust+ push servers**.  
+They do **not change** and are publicly available:
+
+```env
+API_KEY=AIzaSyB5y2y-Tzqb4-I4Qnlsh_9naYv_TD8pCvY
+PROJECT_ID=rust-companion-app
+GCM_SENDER_ID=976529667804
+GMS_APP_ID=1:976529667804:android:d6f1ddeb4403b338fea619
+ANDROID_PACKAGE_NAME=com.facepunch.rust.companion
+ANDROID_PACKAGE_CERT=E28D05345FB78A7A1A63D70F4A302DBF426CA5AD
+```
+
+If you ever need to reference them again, they’re also shared in the 📣 [Rust+ API Discord](https://discord.gg/uj8nkK4qJr).
+
+---
 
 ## 💬 Available Commands
 
