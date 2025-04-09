@@ -1,8 +1,3 @@
-Sure! Here's your **updated `README.md`**, with the full instructions you provided integrated and styled for a polished look:
-
----
-
-```markdown
 # 🧠 Rustalytics – Rust+ Real-Time Monitoring Bot
 
 Rustalytics is a real-time monitoring bot for Rust servers using the official Rust+ companion system.  
@@ -58,60 +53,6 @@ They contain your device token, server info, and authentication details.
 👉 [RustPlus.py Link Companion (Chrome)](https://chrome.google.com/webstore/detail/rustpluspy-link-companion/gojhnmnggbnflhdcpcemeahejhcimnlf?hl=en)
 
 It will automatically generate the required `config.json` and `server.json` files after you link with Rust+.
-
----
-
-## 🔐 Securing Credentials
-
-Instead of hardcoding values, store all sensitive data in a `.env` file like so:
-
-```env
-# Rust+ FCM Authentication
-API_KEY=AIzaSy...
-PROJECT_ID=rust-companion-app
-GCM_SENDER_ID=976529667804
-GMS_APP_ID=1:976...
-ANDROID_PACKAGE_NAME=com.facepunch.rust.companion
-ANDROID_PACKAGE_CERT=E280...
-
-# Rust+ Push Credentials
-EXPO_PUSH_TOKEN=ExponentPushToken[...]
-FCM_TOKEN=...
-GCM_ANDROID_ID=...
-GCM_SECURITY_TOKEN=...
-RUSTPLUS_AUTH_TOKEN=...
-
-# Your Server Info
-SERVER_IP=129.232.149.98
-SERVER_PORT=27141
-PLAYER_ID=76561198884329745
-PLAYER_TOKEN=-528216812
-```
-
-### ✅ Keep it secret
-
-Be sure to **add these to your `.gitignore`** so they're not exposed:
-
-```gitignore
-.env
-config.json
-server.json
-```
-
----
-
-## ☁️ Hosting for Free
-
-Rustalytics is built for free-tier cloud services.  
-Here are some platforms you can deploy it on:
-
-- 🔧 [Railway](https://railway.app) (recommended)
-- 🌍 Render
-- 🧪 Replit (basic support only with uptime workarounds)
-
-To stay alive 24/7, consider using a dummy Flask server or keep-alive pings.
-
----
 
 ## 💬 Available Commands
 
