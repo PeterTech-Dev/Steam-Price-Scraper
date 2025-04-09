@@ -5,7 +5,7 @@ It keeps your team updated automatically with in-game alerts for:
 
 - 🚁 Patrol Helicopters  
 - 🚢 Cargo Ship spawns  
-- 💥 Explosions  
+- 💥 Explosions  (Not Displayable on Rust + | Not Working)
 - 🎯 CH47 drops and Oil Rig detection  
 - 🧍 Online/offline, AFK status, and deaths  
 - ⏰ Server time, sunrise/sunset info  
