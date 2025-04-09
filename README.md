@@ -74,7 +74,7 @@ PLAYER_ID=76561198884329745
 PLAYER_TOKEN=-528216812
 ```
 
----
+### 4. Add Public API keys to Python
 
 ### 🧪 Rust+ API Setup
 
