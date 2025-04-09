@@ -62,11 +62,7 @@ If you have any questions, suggestions, or ideas, feel free to open an issue or 
 
 ---
 
-**Made with ❤️ for Steam developers and traders**
-```
-
-Let me know if you'd like to embed a usage screenshot or want badges (like GitHub stars, license, or download count) at the top!
-## 👨‍💻 Author
+👨‍💻 Author
 
 Built with ❤️ by [PeterTech-Dev](https://github.com/PeterTech-Dev)  
 Want to contribute? PRs and stars are always welcome ⭐
